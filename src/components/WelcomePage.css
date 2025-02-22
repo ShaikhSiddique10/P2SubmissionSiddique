@@ -1,0 +1,58 @@
+/* Ensure html and body are full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-image: url('C:\Users\Shaikh Umar\Desktop\Internship Sidd\frontend\public\images\photo-1516321497487-e288fb19713f.jpg');
+    background-size: cover; /* Make the image cover the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  .welcome-box {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white box */
+    padding: 40px;
+    border-radius: 10px;
+    width: 70%; /* Box width */
+    max-width: 500px; /* Maximum box width */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow around box */
+  }
+  
+  .welcome-container h1 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Green color for heading */
+    margin-bottom: 20px;
+  }
+  
+  .welcome-container p {
+    font-size: 1.2rem;
+    color: green; /* White color for text */
+    margin-bottom: 30px;
+  }
+  
+  .welcome-button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .welcome-button:hover {
+    background-color: #45a049;
+  }

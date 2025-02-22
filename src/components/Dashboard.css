@@ -1,0 +1,141 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #e9ecef; /* Lighter background for contrast */
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100vh;            /* Full height of the viewport */
+  color: #333;              /* Default text color */
+  overflow: hidden;
+  background-image: url('C:/Users/Shaikh Umar/Desktop/Internship Sidd/frontend/public/images/background.jpg');
+  background-size: cover; /* Make the image cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4; /* Light background color */
+  padding-top: 60px; /* Offset the fixed navbar height */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;         /* Increased max-width for better spacing */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1);      /* Initial state */
+  margin: auto;             /* Automatically centers the container */
+}
+
+.dashboard-container:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Heading Styles */
+.dashboard-container h2 {
+  color: #4CAF50;               /* Highlighted green for emphasis */
+  margin-bottom: 20px;
+  font-size: 2.2rem;             /* Bigger heading */
+  font-weight: 700;              /* Bold heading */
+  letter-spacing: 1px;           /* Space between letters */
+  text-transform: uppercase;    /* All caps for boldness */
+}
+
+/* Paragraph Text */
+.dashboard-container p {
+  font-size: 1.2rem;             /* Larger text for readability */
+  color: #666666;                /* Slightly lighter gray */
+  line-height: 1.6;              /* Increased line height for better readability */
+  margin-bottom: 30px;           /* Added margin to space out text */
+}
+
+/* Button Container (Flexbox) */
+.dashboard-container .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dashboard-container .button-container button {
+  padding: 14px 28px;             /* Slightly larger buttons */
+  background-color: #4CAF50;      /* Primary button color */
+  color: white;
+  border: none;
+  font-size: 1.1rem;              /* Larger text */
+  cursor: pointer;
+  border-radius: 6px;             /* Round corners for a softer look */
+  transition: all 0.3s ease;      /* Smooth transition for effects */
+  margin: 5px;                    /* Space between buttons */
+}
+
+.dashboard-container .button-container button:hover {
+  background-color: #45a049;      /* Slightly darker green on hover */
+  transform: translateY(-3px);    /* Lift effect */
+}
+
+.dashboard-container .button-container button:active {
+  transform: translateY(0);       /* Button back to normal state */
+}
+
+/* Call-to-action Buttons (Primary & Secondary) */
+.dashboard-container .cta-button {
+  padding: 16px 32px;
+  background-color: #007bff;      /* Blue color for CTA */
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.dashboard-container .cta-button:hover {
+  background-color: #0056b3;      /* Darker blue on hover */
+  transform: translateY(-3px);
+}
+
+.dashboard-container .cta-button:active {
+  transform: translateY(0);
+}
+
+/* Footer Section (Optional) */
+.dashboard-container .footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.dashboard-container .footer a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.dashboard-container .footer a:hover {
+  color: #45a049;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  .dashboard-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-container p {
+    font-size: 1.1rem;
+  }
+
+  .dashboard-container .button-container button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}

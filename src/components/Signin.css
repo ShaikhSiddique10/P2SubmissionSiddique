@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100vh;           /* Full height of the viewport */
+  background-color: #f4f4f4; /* Light background color */
+}
+
+/* SignIn Container */
+.signin-container {
+  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Heading */
+.signin-container h2 {
+  color: #4CAF50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Form Input Fields */
+.signin-container input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.signin-container input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit Button */
+.signin-container button {
+  padding: 14px 20px;
+  width: 100%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.signin-container button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+.signin-container button:active {
+  transform: translateY(0);
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Links (e.g., Forgot Password, Sign Up link) */
+.signin-container .links {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.signin-container .links a {
+  text-decoration: none;
+  color: #4CAF50;
+  transition: color 0.3s ease;
+}
+
+.signin-container .links a:hover {
+  color: #45a049;
+}
+
+/* Forgot Password Help Form */
+.forgot-password-help {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.forgot-password-help input {
+  padding: 12px;
+  margin: 10px 0;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.forgot-password-help button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.forgot-password-help button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signin-container {
+    padding: 25px;
+    max-width: 350px;
+  }
+
+  .signin-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .signin-container button {
+    font-size: 1rem;
+  }
+
+  .forgot-password-help input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .signin-container {
+    max-width: 400px;
+  }
+}
